@@ -49,9 +49,9 @@ st.set_page_config(
     initial_sidebar_state="expanded"
     )
 
-# OPENAI_API_KEY = st.secrets["OPENAI_API_KEY"]
+OPENAI_API_KEY = st.secrets["OPENAI_API_KEY"]
 st.sidebar.subheader("Setup")
-OPENAI_API_KEY = st.sidebar.text_input("Enter Your OpenAI API Key:", type="password")
+# OPENAI_API_KEY = st.sidebar.text_input("Enter Your OpenAI API Key:", type="password")
 st.sidebar.markdown("Get your OpenAI API key [here](https://platform.openai.com/account/api-keys)")
 st.sidebar.divider()
 st.sidebar.subheader("Model Selection")
